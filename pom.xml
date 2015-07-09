@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.test</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>autoscaler-test-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -33,14 +33,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-actuator</artifactId>
+		</dependency>
 	</dependencies>
-	
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -52,7 +57,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<build>
 		<plugins>
 			<plugin>
